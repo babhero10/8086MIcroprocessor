@@ -297,7 +297,7 @@ DecodeSingle MACRO number
 ENDM             
                        
 
-; Encode text and print it
+; Decode text and print it
 DecodeString MACRO numberList
               
     MOV DX, 0000h
@@ -332,10 +332,13 @@ DecodeString MACRO numberList
             CMP CL, AL             
             JE LoopOnTextToDecode  ; Remove Extra spaces
             
-            DecodeSingle DL 
-            PUTC AL ; Print the number on the screen      
+            DecodeSingle DL   
             MOV DL, 00h
-            MOV CL, 01h            
+            MOV CL, 01h       
+            CMP AL, 00h
+            JE  LoopOnTextToDecode ; Skip print if invalid code 
+            PUTC AL                ; Print the number on the screen      
+                        
             JMP LoopOnTextToDecode                            
    
     EXITDecodeString:
