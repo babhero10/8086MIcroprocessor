@@ -27,7 +27,19 @@ Construct this table and store it in the memory.
 Write a program that allowed you to enter a text message, encrypt this message using the
 stored table, then decrypt the cipher text to obtain the original text message.
 
-## Feature
-Menu.
+## Pictures
+Menu
 
-Validation for the inputs.
+![Menu](https://drive.google.com/uc?export=view&id=1XUWEoU7udUC18Zlc7ywLsAyo1UaCoaqo)
+
+Encoding
+
+![Encoding](https://drive.google.com/uc?export=view&id=1pRu_4kIUcO69yy0U0_rplI-UO6rz09FC)
+
+Decoding
+
+![Decoding](https://drive.google.com/uc?export=view&id=1lfo9HMq_VKRK5lP6yyZX5ZI-1-4-p9_4)
+
+Exit
+
+![Exit](https://drive.google.com/uc?export=view&id=1coz1uyyQ-2_GgvA-0bYkkllWU9rf6uiV)
